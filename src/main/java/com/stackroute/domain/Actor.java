@@ -8,20 +8,20 @@ import org.springframework.stereotype.Component;
 @Component
 @PropertySource("classpath:Application.properties")
 public class Actor {
-   // private String name;
-    //private String gender;
-    //private int age;
-
-    @Autowired
-    @Value("${actor.name}")
     private String name;
-    @Value("${actor.gender}")
     private String gender;
-    @Value("${actor.age}")
     private int age;
-    public Actor(){
 
-    }
+@Autowired
+//    @Value("${actor.name}")
+//    private String name;
+//    @Value("${actor.gender}")
+//    private String gender;
+//    @Value("${actor.age}")
+//    private int age;
+//    public Actor(){
+//
+//    }
 
     public Actor(String name, String gender, int age) {
         this.name = name;

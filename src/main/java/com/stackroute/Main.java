@@ -10,6 +10,6 @@ public class Main {
         context.register(BeanConfiguration.class);
         context.refresh();
         Movie movie= (Movie) context.getBean("movie");
-       System.out.println(movie.getActor());
+        System.out.println(movie.getActor());
     }
 }
